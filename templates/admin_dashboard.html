@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Subscriber List</h1>
+    <table border="1">
+        <tr>
+            <th>Email</th>
+            <th>Subscribed At</th>
+        </tr>
+        {% for email, created_at in subscribers %}
+        <tr>
+            <td>{{ email }}</td>
+            <td>{{ created_at }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
